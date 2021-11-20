@@ -3,7 +3,7 @@ module.exports = {
     title: `Sharon's Prairie 👩‍💻`,
     author: {
       name: `Sharon Lau`,
-      summary: `I currently work as a junior data engineer in Shanghai, China, and meanwhile I'm on a VERY LONNNNNG journey to learn computer science and programming.`,
+      summary: `a beginner developer from Shanghai, China.`
     },
     description: `Sharon Lau's Personal Blog`,
     siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.gtsb.io/',

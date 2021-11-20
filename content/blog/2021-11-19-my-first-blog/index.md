@@ -1,11 +1,11 @@
 ---
-title: "Starting my own blog and ..."
+title: "MY VERY FIRST BLOG POST"
 date: "2021-11-20"
 description: "📯📯 A brief intro"
 ---
 
 
-You are at my first post ❕❕ Exciting, huh? After tutorials, debugging, tutorials, debugging, debugging, debugging... in the last two days, THIS SITE IS ACTUALLY RUNNING! Big shout out to [the Gatsby team](https://www.gatsbyjs.com/about/) and the awesome developer community. Yay!! 🙌
+Halo friend! You are at my first post!! Exciting, huh? After tutorials, debugging, tutorials, debugging, debugging, debugging... in the last two days, THIS SITE IS ACTUALLY RUNNING! Big shout out to [the Gatsby team](https://www.gatsbyjs.com/about/) and the awesome developer community. Yay!! 🙌
 
 <span class='inline-text-larger-font'>About this blog. </span> I plan to make posts while I'm self-learning stuff (mostly computer science and programming). The content might be just notes or lists of things I find useful. Kind of a public record of my learning progress, but I wish it'd also be helpful for you in some way.  
 
