@@ -19,6 +19,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             fields {
               slug
+              readingTime {
+                text
+              }
             }
           }
         }
@@ -52,6 +55,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+          readingtime: post.fields.readingTime.text,
         },
       })
     })
@@ -110,6 +114,11 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Fields {
       slug: String
+      readingTime: ReadingTime
+    }
+
+    type ReadingTime {
+      text: String
     }
   `)
 }

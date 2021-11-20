@@ -19,7 +19,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
           }
         }
       }
@@ -44,11 +44,8 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Hi, this is a personal blog by <strong>{author.name}</strong>. {author?.summary || null}
+          {` `} You can also find me on{' '} <a href={`https://github.com/${social?.github || ``}`}> GitHub </a> and{' '} <a href={`https://dev.to//${social?.github || ``}`}> DEV.to </a> if you like.
         </p>
       )}
     </div>
