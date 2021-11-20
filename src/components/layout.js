@@ -28,8 +28,7 @@ const Layout = ({ location, title, children }) => {
       <footer>
         Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>{` `}and{` `}
-        <a href="https://www.netlify.com/">Netlify</a>{` `}💚💚💚
+        <a href="https://www.gatsbyjs.com">Gatsby</a>{` `}💚💚💚
       </footer>
       </body>
     </div>

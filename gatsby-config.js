@@ -6,12 +6,27 @@ module.exports = {
       summary: `I currently work as a junior data engineer in Shanghai, China, and meanwhile I'm on a VERY LONNNNNG journey to learn computer science and programming.`,
     },
     description: `Sharon Lau's Personal Blog`,
-    siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.io',
+    siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.gtsb.io/',
     social: {
       github: `sharonytlau`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-3DF9V04J2J", // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-image`,
     // {
     //   resolve: `gatsby-plugin-typography`,
