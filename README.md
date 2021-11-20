@@ -1,3 +1,5 @@
-# [sharonytlau.io](https://sharonytlau.io)
+# [Sharon's Prairie](https://sharonytlau.gtsb.io/)
 
-My personal blog. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog).
+A personal blog built with [Gatsby](https://www.gatsbyjs.com/) 🖖
+
+Blog boilerplate used: [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog) 
