@@ -46,7 +46,7 @@
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
-  --fontSize-0: 1rem;
+  --fontSize-0: 0.95rem;
   --fontSize-1: 1.1rem;
   --fontSize-2: 1.3rem;
   --fontSize-3: 1.5rem;
@@ -61,12 +61,14 @@
   --color-heading: #044736;
   --color-heading-black: black;
   --color-accent: #d1dce5;
+  --color-primary-gray: #b1bfb6;
 }
 
 body {
   display: flex;
   min-height: 90vh;
   flex-direction: column;
+  padding: 0 var(--spacing-1);
 }
 
 main {
@@ -128,8 +130,8 @@ h3{
 h4,
 h5,
 h6{
-  margin-top: var(--spacing-2);
-  margin-bottom: var(--spacing-2);
+  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
 
 }
 
@@ -189,8 +191,13 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   padding: var(--spacing-0);
+}
+
+.no-margin-title{
+  font-weight: var(--fontWeight-bold);
+  margin: 0;
 }
 
 ul,
@@ -198,7 +205,7 @@ ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
   list-style-position: outside;
   list-style-image: none;
 }
@@ -224,13 +231,14 @@ li > ul {
 
 blockquote {
   color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
+  margin-left: calc(-1 * var(--spacing-5));
   margin-right: var(--spacing-8);
-  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
+  padding: var(--spacing-1) var(--spacing-0) var(--spacing-1) var(--spacing-5);
   border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-1);
   font-style: italic;
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-4);
+  line-height: var(--lineHeight-relaxed);
 }
 
 blockquote > :last-child {
@@ -242,6 +250,17 @@ blockquote > ol {
   list-style-position: inside;
 }
 
+/* notecard */
+
+.notecard{
+  border-left: 6px solid var(--color-primary-gray);
+  margin: var(--spacing-4) 0;
+  padding: var(--spacing-2) var(--spacing-3);
+  font-size: var(--fontSize-0);
+}
+
+/* table */
+
 table {
   width: 100%;
   margin-bottom: var(--spacing-8);
@@ -250,7 +269,44 @@ table {
 }
 
 table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
+  /* border-bottom: 1px solid var(--color-accent); */
+}
+
+tr:nth-of-type(odd){
+    background-color: #ededed;
+}
+
+td,
+th{
+  padding: var(--spacing-3) 0 var(--spacing-3) var(--spacing-6);
+}
+
+code.language-text{
+  text-shadow: none !important;
+  font-size : var(--fontSize-0) !important;
+  color: #000000 !important;
+  background-color: #f4f4f4 !important;
+}
+
+th{
+  text-align: left;
+  background-color: var(--color-primary-gray);
+  color: #ffffff;
+}
+
+td code.language-text{
+  background-color: transparent !important;
+}
+
+h5 code.language-text{
+  font-weight: var(--fontWeight-bold) !important;
+  font-size: var(--fontSize-2) !important;
+}
+
+/* final paragraph */
+
+.final-paragraph{
+  margin-top: var(--spacing-8);
 }
 
 /* Link */
