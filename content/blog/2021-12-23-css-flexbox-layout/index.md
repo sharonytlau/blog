@@ -21,15 +21,15 @@ Among the layout methods, Flexbox and Grid have become the most popular and powe
 
 ##### Basic Concepts of Flexbox
 
-Flexbox arranges items into rows or columns and distributes available space between items. For learning basic concepts of Flexbox, the articles from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) and [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) are classic. Both provide clear description and straightforward images and examples. 
+Flexbox arranges items into rows or columns and distributes available space between items. For learning basic concepts of Flexbox, the articles from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) and [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) are classic. Both provide clear descriptions and straightforward images and examples. 
 
-The Flexbox concepts includes `flex-direction` and `flex-wrap`, `flex-start` and `flex-end`, main axis and cross axis, flex container and items, `flex-grow`, `flex-shrink`, and `flex-basis`, `justify-content` and `align-items`, `gap`, etc. 
+The Flexbox concepts include `flex-direction` and `flex-wrap`, `flex-start` and `flex-end`, main axis and cross axis, flex container and items, `flex-grow`, `flex-shrink`, and `flex-basis`, `justify-content` and `align-items`, `gap`, etc. 
 
 From my own experience, don't expect to grasp all the concepts *at once* by glancing through the materials. About one year ago, I have had a [LinkedIn Learning course](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid) on Web layouts methods to do my [Web Application projects](https://github.com/sharonytlau/dash-moodquote), but not much knowledge was retained. Therefore, this time I've paced myself, spending 1 to 2 hours each day to learn or review the concepts. This makes me a lot more adept at using Flexbox in exercises and project.
 
 ##### Notes on Flexbox properties
 
-In practice, I sometimes made the error of mixing up properties for flex *containers* and for flex *items*, and at times I got confused about the *default values* of different properties. So, a little summary here for using Flexbox more efficiently in the future:
+In practice, I sometimes made the error of mixing up properties for flex *containers* and flex *items*, and at times I got confused about the *default values* of different properties. So, a little summary here for using Flexbox more efficiently in the future:
 
 * Properties for *containers*: `display`, `flex-direction`, `flex-wrap`, `flex-flow` (shorthand), `justify-content`, `align-items`, `align-content`, `gap`, `row-gap`, `column-gap`
 
@@ -49,9 +49,9 @@ Their *default values*:
 
 <div class="notecard"> <strong>Note:</strong> Although the <code class="language-text">flex</code> shorthand is default to <code class="language-text">0 1 auto</code>, if we set it with a single number value, like <code class="language-text">flex: 1</code>, the default value of flex-basis changes to <code class="language-text">0%</code>, so that declaring <code class="language-text">flex: 1</code> is equivalent to declaring <code class="language-text">flex: 1 1 0%</code>. </div>
 
-For all of these properties, description and examples can be found in the above-mentioned [CSS Tricks article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+For all of these properties, descriptions and examples can be found in the above-mentioned [CSS Tricks article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ##### Making a Webpage from Scratch
 Besides Flexbox, I'd also like to mention a practical suggestion from TOP on making a webpage from scratch. As a webpage consists of multiple sections, it's a good practice to take *one section* at a time, going from the *top* to the *bottom*. While making each section, it might be tempting to go back and forth to deal with both the *content* and the *styling* at the same time, but a more efficient way is to first do the *HTML* (content) and then do the *CSS* (styling).
 
-<p class="final-paragraph"> Up till now, I've finished the HTML and CSS part in the curriculum. Starting this week I will study JavaScript. See you in my next posts, and merry Christmas! 🤶<p>
+<p class="final-paragraph"> Up till now, I've finished the HTML and CSS part of the curriculum. Starting this week I will study JavaScript. See you in my next posts, and merry Christmas! 🤶<p>
