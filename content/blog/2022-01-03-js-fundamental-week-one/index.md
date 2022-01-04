@@ -1,7 +1,7 @@
 ---
 title: "JavaScript Fundamentals"
 date: "2022-01-04"
-description: "Variables, data types, operators, conditionals, and so on..."
+description: "Basic data types, comparisons, logical operators, etc."
 --- 
 
 Happy new year!🎆 First post in 2022, yay!
