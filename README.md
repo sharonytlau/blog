@@ -1,4 +1,4 @@
-# [Sharon's Prairie](https://sharonytlau.gtsb.io/)
+# [Sharon's Prairie](https://sharonytlau.gatsbyjs.io/)
 
 A personal blog built with [Gatsby](https://www.gatsbyjs.com/) 🖖
 
