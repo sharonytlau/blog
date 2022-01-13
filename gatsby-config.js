@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sharon's Prairie 👩‍💻`,
+    title: `Sharon's Prairie`,
     author: {
       name: `Sharon Lau`,
       summary: `a beginner developer from Shanghai, China.`

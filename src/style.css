@@ -58,10 +58,12 @@
   --color-primary-dark:#0c7a4a;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
-  --color-heading: #044736;
+  --color-heading: #0c674b;
+  /* #044736; */
   --color-heading-black: black;
   --color-accent: #d1dce5;
   --color-primary-gray: #b1bfb6;
+  --color-code-background: #f4f4f4;
 }
 
 body {
@@ -98,13 +100,29 @@ body {
 }
 
 footer {
-  padding: var(--spacing-6) var(--spacing-0);
+  padding: var(--spacing-0) var(--spacing-0) var(--spacing-6) var(--spacing-0);
+  max-width: var(--maxWidth-lg);
 }
 
+/* divider */
+
 hr {
-  background: var(--color-accent);
-  height: 1px;
-  border: 0;
+  background: none;
+  /* background: var(--color-accent); */
+  border-bottom: 8px solid var(--color-heading);
+  /* border-bottom: 6px solid white; */
+  border-top: none;
+  margin: var(--spacing-12) 0;
+}
+
+section hr {
+  background: none;
+  height: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #dbebe4;
+  margin: var(--spacing-4) 0;
 }
 
 /* Heading */
@@ -234,7 +252,7 @@ blockquote {
   margin-left: calc(-1 * var(--spacing-5));
   margin-right: var(--spacing-8);
   padding: var(--spacing-1) var(--spacing-0) var(--spacing-1) var(--spacing-5);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: var(--spacing-1) solid var(--color-primary-dark);
   font-size: var(--fontSize-1);
   font-style: italic;
   margin-bottom: var(--spacing-4);
@@ -285,7 +303,7 @@ code.language-text{
   text-shadow: none !important;
   font-size : var(--fontSize-0) !important;
   color: #000000 !important;
-  background-color: #f4f4f4 !important;
+  background-color: var(--color-code-background) !important;
 }
 
 th{
@@ -310,7 +328,7 @@ h5 code.language-text{
 }
 
 .final-paragraph{
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-12);
 }
 
 /* Link */
@@ -321,14 +339,47 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-heading);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
-/* JavaScript Code Style */
+/* Code Style */
 
 .language-javascript .token.operator {
   background-color: transparent;
+}
+
+pre[class*="language-"] {
+  background-color: var(--color-code-background) !important;
+}
+
+code[class*="language-"]{
+  color: #363636 !important;
+  text-shadow: none !important;
+}
+
+.token.comment{
+  color: #b2b3b4 !important;
+  text-shadow: 0 1px white !important;
+}
+
+/* emoji fix */
+
+.emoji-fix{
+  font-weight: 400;
+}
+
+/* footer */
+
+footer h4 {
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-0);
+}
+
+footer h4 a{
+  font-weight: var(--fontWeight-black);
+  /* font-size: var(--fontSize-2); */
+  color: var(--color-heading);
 }
 
 /* Custom classes */
@@ -341,20 +392,21 @@ a:focus {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-16);
 }
 
+/* 
 .global-header {
-  margin-bottom: var(--spacing-12);
-}
+  
+} */
 
 .main-heading {
   font-size: var(--fontSize-7);
-  margin: 0;
+  margin: 0 0 var(--spacing-12) 0;
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-12) !important;
   margin-top: var(--spacing-8);
 }
 
@@ -362,22 +414,24 @@ a:focus {
   margin-bottom: var(--spacing-0);
 }
 
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
+
+.post-list-item h3 {
+  font-weight: var(--fontWeight-black);
   color: var(--color-primary-dark);
   margin-bottom: var(--spacing-3);
   margin-top: var(--spacing-0);
 }
 
 .post-list-item header {
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-1);
 }
 
 .header-link-home {
   font-weight: var(--fontWeight-black);
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-3);
+  color: var(--color-heading);
+  font-size: var(--fontSize-4);
   letter-spacing: -0.035em;
 }
 
@@ -393,17 +447,22 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
+  min-width: 60px;
   border-radius: 100%;
 }
 
 .blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  margin:  var(--spacing-16) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
+
+/* .blog-post section h3 {
+  margin-top: var(--spacing-8);
+} */
 
 .blog-post header p {
   font-size: var(--fontSize-1);
   font-family: var(--font-heading);
+  margin-bottom: var(--spacing-8);
 }
 
 .blog-post-nav ul {
