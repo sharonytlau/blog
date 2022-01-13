@@ -1,7 +1,7 @@
 ---
 title: "JavaScript Fundamentals II"
 date: "2022-01-13"
-description: "Basic data types, comparisons, errors, etc."
+description: "Arrays, loops, functions, and errors"
 --- 
 
 This past week, I've learned more JS fundamentals by going through [the JavaScript basics section](https://www.theodinproject.com/paths/foundations/courses/foundations#javascript-basics) of The Odin Project. Specifically, I have learned the concepts of JavaScript [functions](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-3), [arrays](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-4#arrays), [loops](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-4#loops), and [errors](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/understanding-errors). In addition to the JS concepts, I've gone through some materials on important developer skills such as [problem solving](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/problem-solving) and [clean code](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/clean-code).
