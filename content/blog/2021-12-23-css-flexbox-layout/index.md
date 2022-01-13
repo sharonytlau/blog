@@ -11,7 +11,7 @@ Flexbox is an important Web layout method. In this section, I've read some artic
 Today's post will be about my thinking and notes while learning Flexbox, and as usual, there will be links to some learning materials that have helped me to understand the subject.
 
 
-##### Web Layout
+#### Web Layout
 
 While learning Web layout, I was puzzled by the many available layout methods, such as [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float), [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), and [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). Are all of the methods still relevant or are some of them becoming obsolete? Which should I use and when? 
 
@@ -19,7 +19,7 @@ While learning Web layout, I was puzzled by the many available layout methods, s
 
 Among the layout methods, Flexbox and Grid have become the most popular and powerful ones in recent years. Though I have not dived into Grid yet, I've checked [these](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods#flexbox_and_other_layout_methods) [two](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout) MDN articles for a comparison between Flexbox and Grid. Despite a lot of similarities, there is a fundamental difference between the two methods that Flexbox is designed for layout in *one dimension* while Grid is for *two-dimensional* layout. 
 
-##### Basic Concepts of Flexbox
+#### Basic Concepts of Flexbox
 
 Flexbox arranges items into rows or columns and distributes available space between items. For learning basic concepts of Flexbox, the articles from [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) and [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) are classic. Both provide clear descriptions and straightforward images and examples. 
 
@@ -27,7 +27,7 @@ The Flexbox concepts include `flex-direction` and `flex-wrap`, `flex-start` and 
 
 From my own experience, don't expect to grasp all the concepts *at once* by glancing through the materials. About one year ago, I have had a [LinkedIn Learning course](https://www.linkedin.com/learning/css-layouts-from-float-to-flexbox-and-grid) on Web layouts methods to do my [Web Application projects](https://github.com/sharonytlau/dash-moodquote), but not much knowledge was retained. Therefore, this time I've paced myself, spending 1 to 2 hours each day to learn or review the concepts. This makes me a lot more adept at using Flexbox in exercises and project.
 
-##### Notes on Flexbox properties
+#### Notes on Flexbox properties
 
 In practice, I sometimes made the error of mixing up properties for flex *containers* and flex *items*, and at times I got confused about the *default values* of different properties. So, a little summary here for using Flexbox more efficiently in the future:
 
@@ -51,7 +51,9 @@ Their *default values*:
 
 For all of these properties, descriptions and examples can be found in the above-mentioned [CSS Tricks article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
-##### Making a Webpage from Scratch
+#### Making a Webpage from Scratch
 Besides Flexbox, I'd also like to mention a practical suggestion from TOP on making a webpage from scratch. As a webpage consists of multiple sections, it's a good practice to take *one section* at a time, going from the *top* to the *bottom*. While making each section, it might be tempting to go back and forth to deal with both the *content* and the *styling* at the same time, but a more efficient way is to first do the *HTML* (content) and then do the *CSS* (styling).
+
+---
 
 <p class="final-paragraph"> Up till now, I've finished the HTML and CSS part of the curriculum. Starting this week I will study JavaScript. See you in my next posts, and merry Christmas! 🤶<p>

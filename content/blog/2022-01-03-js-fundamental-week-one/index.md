@@ -12,8 +12,7 @@ The  [JavaScript basics section](https://www.theodinproject.com/paths/foundation
 
 In this post, I hope to share my notes of a few important JS concepts, such as [basic data types](#basic-data-types), [comparisons](#comparisons), and [logical operators](#logical-operators). Some of them are sort of tricky or counterintuitive, so I'd like to pay attention to them.
 
-
-##### Basic Data Types
+#### Basic Data Types
 
 There are eight basic data types in JavaScript: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type), [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#number_type), [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type), [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type), [Null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#null_type), [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#undefined_type), [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#symbol_type), and [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects). 
 
@@ -44,7 +43,7 @@ As introduced in the [Modern JavaScript Tutorial](https://javascript.info/types)
 
 There's an officially recognized error when checking the *type* of `null` using `typeof`, which should return `"null"` but returns `"object"`.
 
-##### Comparisons
+#### Comparisons
 
 In real-world programming, we use [conditional statements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals) for *decisions* and *actions* based on different inputs. Comparisons are what we use to *test* the conditions inside our conditional statements. 
 
@@ -109,12 +108,12 @@ Note that  `null == 0` is `false` but `null >= 0` is `true`. This is tricky bu
 
 Whenever we do comparisons with variables that can have these two special values, it's a good practice to check for them separately. 
 
-##### Logical Operators
+#### Logical Operators
 
 Besides comparisons, logical operators are also important for expressing conditionals. There are four logical operators in JavaScript: [`||` (OR)](https://javascript.info/logical-operators#or), [`&&` (AND)](https://javascript.info/logical-operators#and), [`!` (NOT)](https://javascript.info/logical-operators#not), and `??` (Nullish Coalescing). 
 
-* `||` (OR) and `&&` (AND)
-
+* **`||` (OR) and `&&` (AND)**
+  
   In JavaScript, the two operators `||` (OR) and `&&` (AND) do not just return Boolean values like that in classical programming. Specifically, they have the following (similar) rules:
   
   `||` returns the first *truthy* value, or the last value if none were found. For example:
@@ -156,6 +155,7 @@ There are specs that tell whether a value is truthy or falsy. A nice tutorial fr
 As shown in the table, for Number type values, only `0` (including `+0` and `-0`) becomes `false` in Boolean conversion. 
 The entire list of falsy values is quite short actually.
 
+---
 
 <p class="final-paragraph"> To sum up, in JavaScript, there are some basic data types and special values that we should take care of. Operations with values such as <code class="language-text">null</code> and <code class="language-text">undefined</code>, and even numeric strings could have unexpected results. If we want to write valid conditionals in our JS programs, we should understand rules of comparisons and logical operators and pay attention when they work with these values.
 
