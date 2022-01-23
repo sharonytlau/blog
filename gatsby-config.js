@@ -6,7 +6,7 @@ module.exports = {
       summary: `a beginner developer from Shanghai, China.`
     },
     description: `Sharon Lau's Personal Blog`,
-    siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.gtsb.io/',
+    siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.gatsbyjs.io/',
     social: {
       github: `sharonytlau`,
     },
@@ -26,6 +26,12 @@ module.exports = {
           head: true,
         },
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: '/'
+      }
     },
     `gatsby-plugin-image`,
     // {
