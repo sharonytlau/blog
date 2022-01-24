@@ -10,6 +10,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "gatsby": "^4.2.0",
+    "gatsby-plugin-catch-links": "^4.5.0",
     "gatsby-plugin-config": "^1.0.7",
     "gatsby-plugin-feed": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
