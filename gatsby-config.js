@@ -46,7 +46,7 @@ module.exports = {
         fonts: [
           `Montserrat\:700,900`,
           `Merriweather\:400,400i,700,700i`,
-          `Crimson Text\:400,400i,700,700i`,
+          `Noto Sans Mono\:400,400i,700,700i`,
         ],
         display: 'swap'
       }
