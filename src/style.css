@@ -471,7 +471,7 @@ footer h4 a{
 
 .inline-text-larger-font {
   font-size: var(--fontSize-2);
-  font-weight: var(--fontWeight-extrabold);
+  font-weight: var(--fontWeight-black);
 }
 
 /* Media queries */

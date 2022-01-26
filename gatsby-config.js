@@ -44,9 +44,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Montserrat`,
-          `Merriweather`,
-          `Crimson Text`,
+          `Montserrat\:700,900`,
+          `Merriweather\:400,400i,700,700i`,
+          `Crimson Text\:400,400i,700,700i`,
         ],
         display: 'swap'
       }
