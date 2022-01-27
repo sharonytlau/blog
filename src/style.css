@@ -327,13 +327,20 @@ h5 code.language-text{
 
 /* Link */
 
-a {
+h3 a:hover,
+h4 a:hover,
+.header-link-home:hover {
   color: var(--color-primary);
+}
+
+a,
+a:hover,
+a:focus {
+  color: var(--color-primary-dark);
 }
 
 a:hover,
 a:focus {
-  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -366,12 +373,15 @@ code.language-text{
   font-family: var(--fontFamily-mono);
 }
 
-code.language-text,
-code.language-text a {
+a code.language-text {
+  color: var(--color-primary-dark) !important;
+}
+
+code.language-text {
   color: #363636 !important;
 }
 
-
+/* code.language-text a */
 
 .token.comment{
   color: #b2b3b4 !important;
