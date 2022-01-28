@@ -310,11 +310,6 @@ td code.language-text{
   background-color: transparent !important;
 }
 
-h5 code.language-text{
-  font-weight: var(--fontWeight-bold) !important;
-  font-size: var(--fontSize-2) !important;
-}
-
 /* paragraph spacing */
 
 .gatsby-highlight{
@@ -381,7 +376,9 @@ code.language-text {
   color: #363636 !important;
 }
 
-/* code.language-text a */
+h4 code.language-text {
+  font-size: var(--fontSize-2) !important;
+}
 
 .token.comment{
   color: #b2b3b4 !important;
@@ -403,7 +400,6 @@ footer h4 {
 
 footer h4 a{
   font-weight: var(--fontWeight-black);
-  /* font-size: var(--fontSize-2); */
   color: var(--color-heading);
 }
 
