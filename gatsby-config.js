@@ -3,10 +3,13 @@ module.exports = {
     title: `Sharon's Prairie`,
     author: {
       name: `Sharon Lau`,
-      summary: `a beginner developer from Shanghai, China.`
+      summary: `a beginner developer from Shanghai, China.`,
     },
     description: `Sharon Lau's Personal Blog`,
-    siteUrl: (process.env.NODE_ENV === 'development') ? 'http://localhost:8000' : 'https://sharonytlau.gatsbyjs.io/',
+    siteUrl:
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:8000"
+        : "https://sharonytlau.gatsbyjs.io/",
     social: {
       github: `sharonytlau`,
     },
@@ -18,6 +21,7 @@ module.exports = {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
           "G-3DF9V04J2J", // Google Analytics / GA
+          "G-MLVV7BWRE1",
         ],
         // This object gets passed directly to the gtag config command
         // This object is used for configuration specific to this plugin
@@ -30,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: '/'
-      }
+        output: "/",
+      },
     },
     `gatsby-plugin-image`,
     // {
@@ -48,8 +52,8 @@ module.exports = {
           `Merriweather\:400,400i,700,700i`,
           `Noto Sans Mono\:400,400i,700,700i`,
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
