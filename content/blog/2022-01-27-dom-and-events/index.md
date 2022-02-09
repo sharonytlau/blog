@@ -173,7 +173,7 @@ newDiv.style.display = 'flex';
 newDiv.style.fontSize = '10px';
 ```
 
-As you may have noticed, the property name `fontSize` differs from the CSS standard name `font-size`. Basically, in JavaScript we use a camelCase name (like `fontSize`) instead of a kebab-cased one (like `font-size`). Or else, we can use the bracket notation without switching the cases (the notations are introduced in [this post]('../2022-01-24-js-fundamental-week-three/#the-bracket-notation')). Either of the following works: `style.fontSize`, `style['font-size']`, and `style['fontSize']`. 
+As you may have noticed, the property name `fontSize` differs from the CSS standard name `font-size`. Basically, in JavaScript we use a camelCase name (like `fontSize`) instead of a kebab-cased one (like `font-size`). Or else, we can use the bracket notation without switching the cases (the notations are introduced in [this post](../2022-01-24-js-fundamental-week-three/#the-bracket-notation)). Either of the following works: `style.fontSize`, `style['font-size']`, and `style['fontSize']`. 
 
 <div class="notecard"> 
 
