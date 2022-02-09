@@ -241,7 +241,7 @@ Since we already know that `undefined` is a troubling value (in the [previous po
 
 Good practices help us become better programmers. Here are two that I've learned related to functions:
 
-**Use local variables**: It's recommended to use mainly [local variables](https://developer.mozilla.org/en-US/docs/Glossary/Local_variable) in functions. In other words, minimize the use of outer variables. This makes the code clean and easier to understand. The rationale lies in a more advanced concept—[variable scope]((https://javascript.info/closure)).
+**Use local variables**: It's recommended to use mainly [local variables](https://developer.mozilla.org/en-US/docs/Glossary/Local_variable) in functions. In other words, minimize the use of outer variables. This makes the code clean and easier to understand. The rationale lies in a more advanced concept—[variable scope](https://javascript.info/closure).
 
 **One function one action**: Short functions are easier to test and more understandable. A function should do exactly *one* thing and we should name it as to what it does and returns. Function names are usually *verbal*, prefixed by verbs such as `create…`, `show…`, `get…`, `check…` and so on. When we feel it hard to give a function an obvious name, the function may be too complex and we should consider *splitting* it into a few smaller functions.
 
