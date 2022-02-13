@@ -1,5 +1,5 @@
 ---
-title: "Interact with the page"
+title: "Interact With the Page"
 date: "2022-01-28"
 description: "DOM manipulation and event handling in JavaScript"
 --- 
