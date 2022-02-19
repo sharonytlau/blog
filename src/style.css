@@ -330,6 +330,7 @@ ol li {
 
 li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
+  display: inline;
 }
 
 li *:last-child {
