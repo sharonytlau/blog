@@ -43,7 +43,7 @@
   --fontWeight-black: 900;
   --fontSize-root: 14px;
   --lineHeight-none: 1;
-  --lineHeight-tight: 1.1;
+  --lineHeight-tight: 1.3;
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
@@ -217,6 +217,13 @@ p {
 .no-margin-title{
   font-weight: var(--fontWeight-bold);
   margin: 0;
+}
+
+/* list */
+
+.indent-list {
+  padding-inline-start: var(--spacing-10) !important;
+  margin-right: var(--spacing-10) !important;
 }
 
 ul,
