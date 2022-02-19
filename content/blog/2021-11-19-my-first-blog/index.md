@@ -1,5 +1,5 @@
 ---
-title: "MY VERY FIRST BLOG POST"
+title: "My Very First Blog Post"
 date: "2021-11-20"
 description: "📯📯 A brief intro"
 ---
