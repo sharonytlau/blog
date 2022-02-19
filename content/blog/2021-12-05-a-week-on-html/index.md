@@ -1,5 +1,5 @@
 ---
-title: "A week on HTML"
+title: "A Week on HTML"
 date: "2021-12-05"
 description: "Finishing HTML foundations and a simple project"
 ---
