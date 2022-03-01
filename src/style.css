@@ -497,6 +497,13 @@ footer h4 a{
   color: var(--color-heading);
 }
 
+/* text selection color */
+
+::selection {
+  color: black;
+  background:  #ddd;
+}
+
 /* Custom classes */
 
 .global-wrapper {
