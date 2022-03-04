@@ -16,9 +16,9 @@ When a browser parses an HTML document, it creates a structural representation o
 
 In JavaScript, we can manipulate these objects with properties and methods available on them. The HTML file will not be changed, but the page that our browser renders will be changed dynamically when our script is running.
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** To link our JavaScript file in the HTML, we can put the script in the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) element and use the [`defer`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer) or [`async`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-async) attribute (see [this thread](https://stackoverflow.com/a/24070373) on Stack Overflow for details):
+To link our JavaScript file in the HTML, we can put the script in the [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) element and use the [`defer`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer) or [`async`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-async) attribute (see [this thread](https://stackoverflow.com/a/24070373) on Stack Overflow for details):
 
 ``` html
 <head><script src="script.js" defer></script></head>
@@ -40,9 +40,9 @@ As mentioned above, a DOM tree is made of node objects. Many DOM API objects, in
 
 There are different [*types*](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType) of nodes, such as [element node](https://developer.mozilla.org/en-US/docs/Web/API/Element), [text node](https://developer.mozilla.org/en-US/docs/Web/API/Text), [comment node](https://developer.mozilla.org/en-US/docs/Web/API/Comment), [document node](https://developer.mozilla.org/en-US/docs/Web/API/Document), etc. Besides, each DOM node contains *links* to nearby nodes that we can use to move in the tree. The node *relationships* are described using the terms `parent`, `child`, and `sibling`.
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** Sometimes we see node relationship described as `ancestor` and `descendant` (see [this glossary](https://www.w3.org/TR/DOM-Level-3-Core/glossary.html) from W3C), but in the DOM there are no direct links for this kind of relationship.
+Sometimes we see node relationship described as `ancestor` and `descendant` (see [this glossary](https://www.w3.org/TR/DOM-Level-3-Core/glossary.html) from W3C), but in the DOM there are no direct links for this kind of relationship.
 
 </div>
 
@@ -64,9 +64,9 @@ Consider:
 
 In the above HTML snippet, the `html` node is the *parent* node of the `head` and the `body` nodes. Or put it another way, the `head` and the `body` nodes are *child* nodes of the `html` node and are *sibling* nodes. Similarly, we see that the `body` node contains three *child* nodes which are *sibling* nodes.
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** In the [DOM settings](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#ID-1590626202), an `element` node can have several types of nodes as its child node, including `element`, `comment`, `text`, and some others, while a `comment` node or a `text` node cannot have any child node. 
+In the [DOM settings](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html#ID-1590626202), an `element` node can have several types of nodes as its child node, including `element`, `comment`, `text`, and some others, while a `comment` node or a `text` node cannot have any child node. 
 
 </div>
 
@@ -90,9 +90,9 @@ When we call [`Document.querySelector()`](https://developer.mozilla.org/en-US/do
 
 We pass in the selector as a parameter of the method in the form of the [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) syntax. For instance, `document.querySelector('h1')` selects the first `<h1>` element in the document, and `document.body.querySelector('.alert')` selects the first element with the `alert` [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-class) in the `<body>` element.
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** Basic CSS selectors include [universal selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) (`*`), [type selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) (`elementname`), [class selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) (`.classname`), [id selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) (`#idname`), and [attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) (`[attr=value]`). In some cases, we may need [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) and [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) selectors. And there are [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators) for writing more complex rules.
+Basic CSS selectors include [universal selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) (`*`), [type selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) (`elementname`), [class selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) (`.classname`), [id selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) (`#idname`), and [attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) (`[attr=value]`). In some cases, we may need [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) and [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) selectors. And there are [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators) for writing more complex rules.
 
  </div>
 
@@ -127,9 +127,9 @@ These methods insert into different places of the DOM. For instance, the `append
 document.body.append(newDiv);
 ```
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** The node methods [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) and [`nseritBefore()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) are also introduced in several tutorials. However, according to [the Modern JavaScript Tutorial](https://javascript.info/modifying-document), these methods are kind of [outdated](https://javascript.info/modifying-document#old-school-insert-remove-methods). The ones listed above are preferred.
+The node methods [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) and [`nseritBefore()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) are also introduced in several tutorials. However, according to [the Modern JavaScript Tutorial](https://javascript.info/modifying-document), these methods are kind of [outdated](https://javascript.info/modifying-document#old-school-insert-remove-methods). The ones listed above are preferred.
 
 </div>
 
@@ -146,9 +146,9 @@ const btn = document.getElementById('btn'); // select the button element with th
 btn.remove();
 ```
 
-<div class="notecard"> 
+<div class="notecard info"> 
 
-**Note:** [`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) is an older method for this purpose. See also [the Modern JavaScript Tutorial](https://javascript.info/modifying-document#old-school-insert-remove-methods). 
+[`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) is an older method for this purpose. See also [the Modern JavaScript Tutorial](https://javascript.info/modifying-document#old-school-insert-remove-methods). 
 
 </div>
 
@@ -175,9 +175,9 @@ newDiv.style.fontSize = '10px';
 
 As you may have noticed, the property name `fontSize` differs from the CSS standard name `font-size`. Basically, in JavaScript we use a camelCase name (like `fontSize`) instead of a kebab-cased one (like `font-size`). Or else, we can use the bracket notation without switching the cases (the notations are introduced in [this post](../2022-01-24-js-fundamental-week-three/#the-bracket-notation)). Either of the following works: `style.fontSize`, `style['font-size']`, and `style['fontSize']`. 
 
-<div class="notecard"> 
+<div class="notecard link"> 
 
-**Info:** A list of common style properties and names in JavaScript can be found in [this reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) from MDN. For a more complete list of CSS styles, see [this index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) from MDN or [this](https://www.w3.org/TR/cssom-1/#index-defined-elsewhere) from w3.
+A list of common style properties and names in JavaScript can be found in [this reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) from MDN. For a more complete list of CSS styles, see [this index](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) from MDN or [this](https://www.w3.org/TR/cssom-1/#index-defined-elsewhere) from w3.
 
 </div>
 
@@ -197,9 +197,9 @@ There are also events for mouse moving: [`mouseover`](https://developer.mozilla.
 
 Common [keyboard events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) include [`keydown`](https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event) (key pressed) and [keyup](https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event) (key released). We can use their properties to get more information about a key press. For instance, the [`key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) property indicates which key is pressed, and the [`altKey`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/altKey), [`ctrlKey`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/ctrlKey), [`shiftKey`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/shiftKey), and [`metaKey`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/metaKey) properties tell whether a specific [modifier key](https://en.wikipedia.org/wiki/Modifier_key) is pressed with the key.
 
-<div class="notecard"> 
+<div class="notecard link"> 
 
-**Info:** For a reference of available events, see [this index](https://developer.mozilla.org/en-US/docs/Web/Events#event_index) from MDN or [this specification](https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects) from WHATWG. 
+For a reference of available events, see [this index](https://developer.mozilla.org/en-US/docs/Web/Events#event_index) from MDN or [this specification](https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects) from WHATWG. 
 
 </div>
 
@@ -209,9 +209,9 @@ To receive a notification when an event is fired and respond to it, we need to r
 
 The method requires two arguments: the [event type](https://developer.mozilla.org/en-US/docs/Web/Events#event_index) to listen for, and an object containing the code to run  (usually a function) when the event is fired. 
  
-<div class="notecard">
+<div class="notecard info">
 
-**Note:** As explained in [this post](../2022-01-12-js-fundamental-week-two/#functions), a function passed as an argument into another function is called a [callback function](https://www.w3schools.com/js/js_callback.asp). See [this](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#the_event_listener_callback) or [this](https://briggs.dev/blog/understanding-callbacks) to learn more about an  event listener callback.
+As explained in [this post](../2022-01-12-js-fundamental-week-two/#functions), a function passed as an argument into another function is called a [callback function](https://www.w3schools.com/js/js_callback.asp). See [this](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#the_event_listener_callback) or [this](https://briggs.dev/blog/understanding-callbacks) to learn more about an  event listener callback.
 
 </div> 
 
@@ -236,9 +236,9 @@ btn.addEventListener('click', sayHi);
 
 Passing the second parameter using a named function in the call of `addEventListener()` not only cleans the code and enhances reusability, but also allows us to unregister this handler later. The [`removeEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) method is for removing a handler. We need to call this method with the same type and function parameters as the ones we register.
 
-<div class="notecard">
+<div class="notecard link">
 
-**Info:** [This doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name) from MDN describes the `name` property of function objects.
+[This doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name) from MDN describes the `name` property of function objects.
 
 </div>
 
@@ -283,9 +283,9 @@ function showKey(e) {
 
 The examples above illustrate events happening in the browser that are triggered by user actions. In JavaScript, we can simulate actions programmatically to trigger an event. For instance, the [`HTMLElement.click()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click) method simulates a mouse click on an element. When we called the method, it fires the element's `click` event.
 
-<div class="notecard"> 
+<div class="notecard link"> 
 
-**Info:** [This tutorial](https://www.javascripttutorial.net/dom/events/javascript-trigger-event/) has provided more examples.
+[This tutorial](https://www.javascripttutorial.net/dom/events/javascript-trigger-event/) has provided more examples.
 
 </div>
 

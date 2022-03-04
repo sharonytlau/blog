@@ -114,23 +114,23 @@ Besides comparisons, logical operators are also important for expressing conditi
 
 * **`||` (OR) and `&&` (AND)**
   
-  In JavaScript, the two operators `||` (OR) and `&&` (AND) do not just return Boolean values like that in classical programming. Specifically, they have the following (similar) rules:
-  
-  `||` returns the first *truthy* value, or the last value if none were found. For example:
+In JavaScript, the two operators `||` (OR) and `&&` (AND) do not just return Boolean values like that in classical programming. Specifically, they have the following (similar) rules:
 
-  ``` javascript
-  alert( 1 || 0 ); // 1 (the first truthy value)
-  alert( null || 1 ); // 1 (the first truthy value)
-  alert( null || 0 ); // 0 (all falsy, returns the last value)
-  ```
+`||` returns the first *truthy* value, or the last value if none were found. For example:
 
- `AND` returns the first *falsy* value, or the last value if none were found. For example:
+``` javascript
+alert( 1 || 0 ); // 1 (the first truthy value)
+alert( null || 1 ); // 1 (the first truthy value)
+alert( null || 0 ); // 0 (all falsy, returns the last value)
+```
 
-  ``` javascript
-  alert( null && 1 ); // null (the first falsy value)
-  alert( 1 && 0 ); // 0 (the first falsy value)
-  alert( 1 && 5 ); // null (all truthy, returns the last value)
-  ```
+`AND` returns the first *falsy* value, or the last value if none were found. For example:
+
+``` javascript
+alert( null && 1 ); // null (the first falsy value)
+alert( 1 && 0 ); // 0 (the first falsy value)
+alert( 1 && 5 ); // null (all truthy, returns the last value)
+```
 
 
 * **Conversion to Boolean**

@@ -39,15 +39,19 @@ Their *default values*:
   
 | Properties for Containers | Properties for Items |
 |---|-------------|
-| **`display`**`: block/inline` | **`flex-grow`**`: 0` |
-| **`flex-direction`**`: row` | **`flex-shrink`**`: 1` |
-| **`flex-wrap`**`: nowrap` | **`flex-basis`**`: auto` |
-| **`flex-flow`**`: row nowrap` | **`flex`**`: 0 1 auto` |
-| **`justify-content`**: `flex-start` | **`align-self`**`: auto` | 
-| **`align-items`**`: stretch` | **`order`**`: 0` |
-| **`align-content`**`: normal` | |
+| `display: block/inline` | `flex-grow: 0` |
+| `flex-direction: row` | `flex-shrink: 1` |
+| `flex-wrap: nowrap` | `flex-basis: auto` |
+| `flex-flow: row nowrap` | `flex: 0 1 auto` |
+| `justify-content: flex-start` | `align-self: auto` | 
+| `align-items: stretch` | `order: 0` |
+| `align-content: normal` | |
 
-<div class="notecard"> <strong>Note:</strong> Although the <code class="language-text">flex</code> shorthand is default to <code class="language-text">0 1 auto</code>, if we set it with a single number value, like <code class="language-text">flex: 1</code>, the default value of flex-basis changes to <code class="language-text">0%</code>, so that declaring <code class="language-text">flex: 1</code> is equivalent to declaring <code class="language-text">flex: 1 1 0%</code>. </div>
+<div class="notecard info"> 
+
+Note that although the `flex` shorthand is default to `0 1 auto`, if we set it with a single number value, like `flex: 1`, the default value of flex-basis changes to `0%`, so that declaring `flex: 1` is equivalent to declaring `flex: 1 1 0%`. 
+
+</div>
 
 For all of these properties, descriptions and examples can be found in the above-mentioned [CSS Tricks article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 

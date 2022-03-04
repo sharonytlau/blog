@@ -16,9 +16,9 @@ The [*front-end*](https://en.wikipedia.org/wiki/Front-end_web_development) in we
 
 The [*back-end*](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction) refers to all that happens behind the scenes to make a website work. It [typically consists of](https://www.codecademy.com/article/back-end-architecture) a *server*, an *app*, and a [*database*](https://developer.mozilla.org/en-US/docs/Glossary/Database). When a user visits a website, the files needed—HTML, CSS, JavaScript, fonts, images, etc.—are [requested](https://en.wikipedia.org/wiki/Request%E2%80%93response) by the user's browser (known as the [client](https://en.wikipedia.org/wiki/Client_(computing))) from the [web server](https://developer.mozilla.org/en-US/docs/Glossary/Server) hosting those files. After processing the incoming requests, the server will send the files back. Because the back-end doesn’t rely on a user’s browser, there's more freedom of choice on development languages. [Ruby](https://www.ruby-lang.org/en/), [Python](https://www.python.org/),  [Java](https://www.java.com/en/), and [PHP](https://www.php.net/) are among the [popular ones](https://www.geeksforgeeks.org/top-7-programming-languages-for-backend-web-development/). And guess what, our beloved [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is also a popular language for back-end web development (because of the creation of [Node.js](https://nodejs.org/en/)). Isn't it fantastic?
 
-<div class="notecard">
+<div class="notecard info">
 
-**Note**: In web development, the terms `front-end` and `client-side` are often used interchangeably, and so it is for the terms `back-end` and `server-side`. [This Q&A on StackExchange](https://softwareengineering.stackexchange.com/questions/188521/is-the-term-front-end-synonymous-with-client-side-if-so-is-this-always-the) discusses the nuances among the terms. 
+In web development, the terms `front-end` and `client-side` are often used interchangeably, and so it is for the terms `back-end` and `server-side`. [This Q&A on StackExchange](https://softwareengineering.stackexchange.com/questions/188521/is-the-term-front-end-synonymous-with-client-side-if-so-is-this-always-the) discusses the nuances among the terms. 
 
 </div>
 
@@ -26,9 +26,9 @@ In modern web development, functionalities shift between the back-end and the fr
 For example, [site rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web) can be done at either the server-side or the client-side. There are [a bunch of discussions](https://www.google.com/search?q=client-side+versus+server-side+site+rendering) around what are we supposed to do. However, there also exists some consensus about what the back-end should do. For instance, the back-end should control what data is sent to a user. Because everything in the front-end is exposed to the users, sensitive data should be kept in the back-end to guard against malicious parties.
 
 
-<div class="notecard"> 
+<div class="notecard link"> 
 
-**Info:** [This podcast from *HTML All The Things*](https://www.htmlallthethings.com/podcasts/where-frontend-ends-and-backend-begins-part-1) has provided some insights about front-end versus back-end, and [this MDN doc](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction#what_can_you_do_on_the_server-side) provides an overview of the things we can do on the server-side.
+[This podcast from *HTML All The Things*](https://www.htmlallthethings.com/podcasts/where-frontend-ends-and-backend-begins-part-1) has provided some insights about front-end versus back-end, and [this MDN doc](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction#what_can_you_do_on_the_server-side) provides an overview of the things we can do on the server-side.
 
 </div>
 
@@ -39,10 +39,9 @@ For example, [site rendering](https://developers.google.com/web/updates/2019/02/
 Both [front-end](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Introduction) and [back-end](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Web_frameworks) have  frameworks that simplify the work of developers. Many popular web frameworks (or [libraries](https://en.wikipedia.org/wiki/JavaScript_library)) are JavaScript-based. The [front-end ones](https://en.wikipedia.org/wiki/Comparison_of_JavaScript-based_web_frameworks) include [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), [Angular](https://angular.io/), [Svelte](https://svelte.dev/), etc. And the [back-end ones](https://en.wikipedia.org/wiki/Comparison_of_server-side_web_frameworks#JavaScript) include [Express](https://expressjs.com/) (unopinionated framework), [Next.js](https://nextjs.org/) (the React framework), [Nuxt](https://nuxtjs.org//) (the Vue framework), etc.
 
 
-<div class="notecard">
+<div class="notecard link">
 
-
-**Info:** Information from [State of JavaScript](https://2021.stateofjs.com/en-US/libraries) and [stackshare.io](https://stackshare.io/stacks) can provide a sense of a framework's popularity. The former is an annual survey of the trends in the JavaScript ecosystem, and the latter is a platform where developers share what technologies they use. 
+Information from [State of JavaScript](https://2021.stateofjs.com/en-US/libraries) and [stackshare.io](https://stackshare.io/stacks) can provide a sense of a framework's popularity. The former is an annual survey of the trends in the JavaScript ecosystem, and the latter is a platform where developers share what technologies they use. 
 
 </div>
 
@@ -69,9 +68,9 @@ There are also [some more specific questions](https://developer.mozilla.org/en-U
 
 </div>
 
-<div class="notecard">
+<div class="notecard info">
 
-**Note:** [Domain-specific languages (DSLs)](https://www.jetbrains.com/mps/concepts/domain-specific-languages/) used in front-end frameworks are typically variations on *JavaScript* or *HTML*. For instance, *React* supports [JSX](https://reactjs.org/docs/introducing-jsx.html) (a syntax extension to JavaScript) and *Vue* supports [HTML-based template syntax](https://vuejs.org/guide/essentials/template-syntax.html). These languages help developers improve productivity by writing more concise code.
+[Domain-specific languages (DSLs)](https://www.jetbrains.com/mps/concepts/domain-specific-languages/) used in front-end frameworks are typically variations on *JavaScript* or *HTML*. For instance, *React* supports [JSX](https://reactjs.org/docs/introducing-jsx.html) (a syntax extension to JavaScript) and *Vue* supports [HTML-based template syntax](https://vuejs.org/guide/essentials/template-syntax.html). These languages help developers improve productivity by writing more concise code.
 
 </div>
 
@@ -107,9 +106,9 @@ That being said, I'm still on my way figuring out the "customized" path. After f
  
 </div>
 
-<div class='notecard'>
+<div class='notecard link'>
 
-**Info:** There are many resources for web developers to stay current. [The State of JS report](https://2021.stateofjs.com/en-US/resources) has listed the popular ones.
+There are many resources for web developers to stay current. [The State of JS report](https://2021.stateofjs.com/en-US/resources) has listed the popular ones.
 
 </div>
 

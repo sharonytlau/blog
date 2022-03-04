@@ -51,8 +51,11 @@ function Person(name, age) {
 let person = new Person('Sharon','18');
 ```
 
-<div class="notecard"> Note: When we call the constructor with <code class="language-text">new</code>, the <code class="language-text">this</code> keyword refers to our newly created object. The properties are initialized with data that comes from constructor arguments. </div>
+<div class="notecard info"> 
 
+When we call the constructor with `new`, the `this` keyword refers to our newly created object. The properties are initialized with data that comes from constructor arguments. 
+
+</div>
 
 With this constructor, we can easily create many other similar objects. For example:
 
@@ -102,7 +105,11 @@ let person = {
 person.greet(); // Hello! I'm Sharon.
 ```
 
-<div class="notecard"> Note: The <code class="language-text">this</code> keyword here refers to the object that owns the method, so in this case <code class="language-text">this</code> is equivalent to <code class="language-text">person</code>.</div>
+<div class="notecard info"> 
+
+The `this` keyword here refers to the object that owns the method, so in this case `this` is equivalent to `person`.
+
+</div>
 
 #### The bracket notation
 
@@ -221,11 +228,18 @@ function isEmpty(obj) {
 }
 ```
 
-<div class="notecard"> Note: <code class="language-text"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a></code> is a loop that iterates over all properties of an object. The above code works because the loop will not start if the object is empty. Other looping techniques <a href="../2022-01-12-js-fundamental-week-two/">we have seen</a>, such as <code class="language-text"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach</a></code> and <code class="language-text"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of">for...of</a></code>, are not applicable here. Because <code class="language-text">forEach</code> is an Array method and <code class="language-text">for..of</code> can only be used on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol">iterables</a>.
+<div class="notecard info"> 
+
+[`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) is a loop that iterates over all properties of an object. The above code works because the loop will not start if the object is empty. Other looping techniques [we have seen](../2022-01-12-js-fundamental-week-two/), such as [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) and [`for...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of), are not applicable here. Because `forEach` is an Array method and `for..of` can only be used on [iterables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol).
+
 </div>
 
 ---
 
-<p class="final-paragraph"> In summary, this post has gone through some basics of JavaScipt objects, including creating new objects with properties and methods, accessing or altering object properties, and checking for property existence. <p>
+<p class="final-paragraph"> 
+
+In summary, this post has gone through some basics of JavaScipt objects, including creating new objects with properties and methods, accessing or altering object properties, and checking for property existence. 
+
+<p>
 
 In case you were wondering, my age is not 18 (of course). And, feel free to have some fun with my projects! I personally think they're not bad 😀. The next post will be on DOM and events, which are essential for building interactive web sites or applications. Cheers! 

@@ -31,7 +31,11 @@ seasons.splice(2, 1, 'Autumn');
 console.log(seasons); // ['Spring', 'Summer', 'Autumn', 'Winter']
 ```
 
-<div class="notecard"> Note: <code class="language-text">splice()</code> modifies an array in place, meaning that the original Array will be <em>changed</em> after calling the method.</div>
+<div class="notecard info"> 
+
+Note that `splice()` modifies an array in place, meaning that the original array will be *changed* after calling the method.
+
+</div>
 
 `splice()` can also be used like the other methods. In the parameters, only `start` is *required*. So we can *omit* `deletecount` if we do not want to delete any existing element or *omit* `items` if not adding new ones.
 
@@ -51,7 +55,11 @@ const numbers = [1, 2, 3];
 numbers instanceof Array; // true
 ```
 
-<div class="notecard">Note: in <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray#instanceof_vs_isarray'>this doc from MDN</a> it's suggested that <code class="language-text">isArray()</code> is preferred over <code class="language-text">instanceof</code></div>
+<div class="notecard info">
+
+In [this doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray#instanceof_vs_isarray) from MDN, it's suggested that `isArray()` is preferred over `instanceof`.
+
+</div>
 
 
 #### Loops
@@ -165,7 +173,11 @@ function [name]([param1[, param2[, ..., paramN]]]) {
 }
 ```
 
-<div class="notecard"> Note: <code class="language-text">name</code> is <em>optional</em> in function expressions while <em>required</em> in function declarations. The kind of functions without a name is called  <a href="https://www.geeksforgeeks.org/javascript-anonymous-functions/">anonymous functions</a>. </div>
+<div class="notecard info"> 
+
+Note that `name` is *optional* in function expressions while *required* in function declarations. The kind of functions without a name is called [anonymous functions](https://www.geeksforgeeks.org/javascript-anonymous-functions/). 
+
+</div>
 
 A key difference between the two is that a *function declaration* is [*hoisted*](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting#function_hoisting), meaning that the function can be *called above* its definition. In contrast, functions created in the form of *function expression* can only be *called after* the execution reaches the expression.
 
