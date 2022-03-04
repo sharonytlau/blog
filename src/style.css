@@ -133,6 +133,7 @@
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
+  --fontSize-code: 0.9em;
   --fontSize-0: 0.95rem;
   --fontSize-1: 1.1rem;
   --fontSize-2: 1.3rem;
@@ -146,11 +147,15 @@
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #0c674b;
-  /* #044736; */
+  --color-note-text: #01512e;
+  --color-note-background: #f2f5f3;
+  --color-note-border: #395d4d;
   --color-heading-black: black;
   --color-accent: #d1dce5;
-  --color-primary-gray: #b1bfb6;
-  --color-code-background: #f4f4f4;
+  --color-table-header: #ededed;
+  --color-table-header-text: var(--color-note-text);
+  --color-table-text: black;
+  --color-code-background: #fafafa;
 }
 
 body {
@@ -363,14 +368,66 @@ blockquote > ol {
   list-style-position: inside;
 }
 
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .03);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
 /* notecard */
 
 .notecard{
-  border-left: 6px solid var(--color-primary-gray);
+  box-shadow: 3px 3px 1px var(--color-note-border);
+  color: var(--color-note-text);
+  position: relative;
+  background-color: var(--color-note-background);
+  padding: var(--spacing-4) var(--spacing-4) var(--spacing-4) var(--spacing-12);
   margin: var(--spacing-4) 0;
-  padding: 0 var(--spacing-3);
-  font-size: var(--fontSize-1);
+  border: 1px solid var(--color-note-border);
+  border-radius: 10px;
 }
+
+.notecard::before {
+  position: absolute;
+  top: 1.15rem;
+  left: var(--spacing-4);
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #015F36;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  content: "";
+}
+
+.notecard.link::before {
+  mask-image: url("./images/note-link.svg");
+}
+
+.notecard.info::before {
+  mask-image: url("./images/note-info.svg");
+}
+
+.notecard p {
+  font-size: var(--fontSize-0);
+  margin: 0;
+}
+
 
 /* table */
 
@@ -379,14 +436,21 @@ table {
   margin-bottom: var(--spacing-8);
   border-collapse: collapse;
   border-spacing: 0.25rem;
+  /* box-shadow: 2px 1px 1px gray; */
+  color: var(--color-note-text) !important;
 }
 
-table thead tr th {
-  /* border-bottom: 1px solid var(--color-accent); */
+table {
+  color: var(--color-table-text) !important;
+}
+
+table {
+  font-size: var(--fontSize-0) !important;
 }
 
 tr:nth-of-type(odd){
-    background-color: #ededed;
+    background-color: var(--color-code-background);
+    /* #ededed; */
 }
 
 td,
@@ -396,8 +460,8 @@ th{
 
 th{
   text-align: left;
-  background-color: var(--color-primary-gray);
-  color: #ffffff;
+  background-color: var(--color-table-header);
+  color: var(--color-table-header-text);
 }
 
 td code.language-text{
@@ -441,23 +505,22 @@ a:focus {
 
 pre[class*="language-"] {
   background-color: var(--color-code-background) !important;
-  font-size: var(--fontSize-0) !important;
 }
 
 code[class*="language-"]{
-  color: #363636 !important;
   text-shadow: none !important;
   border-radius: none !important;
 }
 
+
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: var(--fontFamily-mono) !important;
+  font-size : var(--fontSize-code) !important;
 }
 
 code.language-text{
   text-shadow: none !important;
-  font-size : var(--fontSize-0) !important;
   background-color: var(--color-code-background) !important;
   font-family: var(--fontFamily-mono);
 }
@@ -470,13 +533,27 @@ code.language-text {
   color: #363636 !important;
 }
 
-h4 code.language-text {
-  font-size: var(--fontSize-2) !important;
+table code.language-text {
+  color: var(--color-table-text) !important;
 }
 
 .token.comment{
-  color: #b2b3b4 !important;
+  color: #a2a2a3 !important;
   text-shadow: 0 1px white !important;
+}
+
+.notecard code.language-text{
+  background-color: #e7efe7 !important;
+  /* #e7f0e7 !important; */
+  color: inherit !important;
+} 
+
+.notecard pre[class*="language-"] {
+  background-color: rgba(0, 0, 0, .03) !important;
+}
+
+.notecard a {
+  color: inherit;
 }
 
 /* emoji fix */
@@ -499,9 +576,10 @@ footer h4 a{
 
 /* text selection color */
 
-::selection {
-  color: black;
-  background:  #ddd;
+::selection,
+code.language-text::selection {
+  color: hsla(96, 92%, 20%);
+  background: hsla(96, 92%, 45%, 0.2) !important;
 }
 
 /* Custom classes */
