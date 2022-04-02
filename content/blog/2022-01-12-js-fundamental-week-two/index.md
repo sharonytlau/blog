@@ -15,7 +15,7 @@ In this post, I will continue with my notes on important JS concepts. As for the
 
 * **Add or remove elements**
 
-There are many useful [methods](https://javascript.info/array-methods) for mutation operations on Arrays. For instance, we can use [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), [`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop),  [`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift), and [`unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) for adding or removing element(s) from the beginning or the end of an Array. 
+There are many useful [methods](https://javascript.info/array-methods) for mutation operations on arrays. For instance, we can use [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push), [`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop),  [`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift), and [`unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) for adding or removing element(s) from the beginning or the end of an array. 
 
 While these methods allow us to do one kind of operation (add or remove), the [`splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) method enables us to do both at the same time. The syntax is as follows:
 
@@ -39,9 +39,9 @@ Note that `splice()` modifies an array in place, meaning that the original array
 
 `splice()` can also be used like the other methods. In the parameters, only `start` is *required*. So we can *omit* `deletecount` if we do not want to delete any existing element or *omit* `items` if not adding new ones.
 
-* **Check for Array instance**
+* **Check for array instance**
 
-To check whether a value is an Array, we can use the [isArray()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) method. For instance:
+To check whether a value is an array object, we can use the [isArray()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) method. For instance:
 
 ``` javascript
 Array.isArray([1, 2, 3]);  // true
