@@ -1,6 +1,6 @@
 ---
-title: "Prototype-based inheritance in JavaScript"
-date: "2022-04-03"
+title: "Prototype-based Inheritance in JavaScript"
+date: "2022-04-04"
 description: "Prototype, inheritance, constructor function, class, and so on..."
 --- 
 
