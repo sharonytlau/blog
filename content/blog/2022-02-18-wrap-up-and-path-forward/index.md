@@ -78,7 +78,7 @@ I personally think community and documentation are significant factors. As a beg
 
 Also, an important point to note about frameworks is that we should have a strong programming foundation no matter which framework we use. New frameworks appear all the time. If we rush ourselves through one framework to another without an understanding of the fundamentals, we will not be good at any. Therefore, to excel in JavaScript frameworks like Vue and React, we have to be proficient at JavaScript.
 
-## Wrap Up and Path Forward
+#### Wrap Up and Path Forward
 
 Now that you've come with me to the end of [The Odin Project Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations)! 🙌 Like it's been said in the [last lesson of TOP](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/choose-your-path-forward), that was quite a journey.
 
