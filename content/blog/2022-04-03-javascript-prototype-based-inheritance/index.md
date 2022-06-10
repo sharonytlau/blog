@@ -39,7 +39,7 @@ From now on, *`[[Prototype]]`* will be referred to as *prototype*, as it is in t
 
 #### Object creation techniques
 
-An object's prototype is initially determined during object creation. So, in this section, let's look at the three object creation techniques in JavaScript: *initializers* (object initializers and array initializers, *`Object.create()`*, and *constructors* (used with the `new` operator).
+An object's prototype is initially determined during object creation. So, in this section, let's look at the three object creation techniques in JavaScript: *initializers* (object initializers and array initializers), *`Object.create()`*, and *constructors* (used with the `new` operator).
 
 - **Initializers**
 
