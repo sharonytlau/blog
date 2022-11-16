@@ -3,7 +3,7 @@ module.exports = {
     title: `Sharon's Prairie`,
     author: {
       name: `Sharon Lau`,
-      summary: `a beginner developer from Shanghai, China.`,
+      summary: `an aspiring web developer based in London, UK.`,
     },
     description: `Sharon Lau's Personal Blog`,
     siteUrl:
@@ -68,9 +68,6 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,

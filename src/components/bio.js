@@ -45,7 +45,7 @@ const Bio = () => {
       {author?.name && (
         <p>
           Personal blog by <strong>{author.name}</strong>, {author?.summary || null}
-          {` `} You can also find me on{' '} <a href={`https://github.com/${social?.github || ``}`}> GitHub </a> {' '}or{' '}<a href={`https://dev.to//${social?.github || ``}`}> DEV.to </a>.
+          {` `} You can also find me on{' '} <a href={`https://github.com/${social?.github || ``}`}> GitHub </a>.
         </p>
       )}
     </div>
