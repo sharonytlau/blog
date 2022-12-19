@@ -310,6 +310,12 @@ p {
   margin: 0;
 }
 
+/* img */
+
+.blog-post img {
+  width: 100%
+}
+
 /* list */
 
 .indent-list {
